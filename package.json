@@ -1,0 +1,27 @@
+{
+  "name": "superhero-myapp",
+  "version": "1.0.0",
+  "description": "Superhero database",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "superhero"
+  ],
+  "author": "Vladyslav Kyryliuk <13atomov@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.0",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "mongoose": "^5.9.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}

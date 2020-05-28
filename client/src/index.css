@@ -1,0 +1,151 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
+* {
+    box-sizing: border-box;
+}
+body, input[text]{
+    color: #888;
+}
+button[disabled], button[disabled]:hover{
+    cursor: default !important;
+    background-color: #eee !important;
+}
+button {
+    font-size: 14px;
+    background-color: #26a69a;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+button:hover {
+    background-color: #ee6e73;
+}
+.save{
+    margin-left: 10px;
+}
+.save:hover{
+    background-color: #00a600;
+}
+label {
+    display: inline-block;
+    width: 4em;
+    margin: .5em 0;
+    color: #888;
+}
+label.value {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+}
+input::placeholder {
+    color: lightgray;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.hero-info{
+    padding: 10px;
+    border: rgba(136, 136, 136, 0.21) solid 1px;
+    box-shadow: rgba(136, 136, 136, 0.2) 1px 1px 7px 1px;
+    margin: 15px auto;
+    text-align: center;
+}
+.my-card-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-card-image img{
+    height: 100px;
+    max-width: 100px;
+}
+.hero-titles{
+    height: 100px;
+}
+.hero-titles strong{
+    font-size: 1.3em;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 0 0;
+}
+.more{
+    text-align: center !important;
+    transition-duration: .5s;
+}
+.more:hover{
+    transform: scale(1.2);
+    color: #ee6e73;
+    cursor: pointer;
+}
+.add-btn{
+    margin-top: 1em;
+    font-size: 1.3em;
+    transition-duration: .3s;
+}
+.btn-floating i{
+    line-height: 30px;
+    font-size: 1.4em;
+}
+.btn-floating{
+    display: inline-flex;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+.add-btn:hover{
+    color: #ee6e73;
+    cursor: pointer;
+}
+.image-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    place-items: end center;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+.btn-img-del-container{
+    position: relative;
+    height: 100%;
+    border: transparent 2px solid;
+    transition-duration: .3s;
+}
+.btn-img-del-container img {
+    width: 100%;
+    height: 100%;
+}
+.btn-img-del-container:hover{
+    border: #26a69a 2px solid;
+}
+.btn-img-delete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #26a69a;
+    color: #fff;
+    border-bottom-left-radius: 100%;
+    line-height: 15px;
+}
+.btn-img-delete span{
+    position: relative;
+    top: -2px;
+    right: -2px;
+}
+.input-error{
+    background-color: #ee6e73;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
