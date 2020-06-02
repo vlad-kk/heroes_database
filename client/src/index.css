@@ -91,6 +91,7 @@ input::placeholder {
     margin-top: 1em;
     font-size: 1.3em;
     transition-duration: .3s;
+    max-width: 250px;
 }
 .btn-floating i{
     line-height: 30px;
